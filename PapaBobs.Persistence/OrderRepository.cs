@@ -31,6 +31,7 @@ namespace PapaBobs.Persistence
             order.Address = orderDTO.Address;
             order.Phone = orderDTO.Phone;
             order.Zip = orderDTO.Zip;
+            order.PaymentType = orderDTO.PaymentType;
             order.TotalCost = orderDTO.TotalCost;
             order.Completed = orderDTO.Completed;
             return order;

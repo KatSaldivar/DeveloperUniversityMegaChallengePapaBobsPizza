@@ -19,7 +19,7 @@ namespace PapaBobs.Domain
             return cost;
         }
 
-        private static decimal calculateToppings(OrderDTO order, DTO.PizzaPriceDTO prices)
+        private static decimal calculateToppings(DTO.OrderDTO order, DTO.PizzaPriceDTO prices)
         {
             decimal cost = 0.0M;
             cost += (order.Sausage) ? prices.SausageCost : 0M;
@@ -29,7 +29,7 @@ namespace PapaBobs.Domain
             return cost;
         }
 
-        private static decimal calculateCrustCost(OrderDTO order, DTO.PizzaPriceDTO prices)
+        private static decimal calculateCrustCost(DTO.OrderDTO order, DTO.PizzaPriceDTO prices)
         {
             decimal cost = 0.0M;
             switch (order.Crust)
@@ -49,7 +49,7 @@ namespace PapaBobs.Domain
             return cost;
         }
 
-        private static decimal calculateSizeCost(OrderDTO order, DTO.PizzaPriceDTO prices)
+        private static decimal calculateSizeCost(DTO.OrderDTO order, DTO.PizzaPriceDTO prices)
         {
             decimal cost = 0.0M;
             switch (order.Size)
