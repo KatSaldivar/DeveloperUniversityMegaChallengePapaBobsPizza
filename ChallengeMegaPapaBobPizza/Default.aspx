@@ -23,7 +23,7 @@
                     <asp:ListItem Text="Medium (14 inch - $14)" Value="Medium" />
                     <asp:ListItem Text="Large (16 inch - $16)" Value="Large" />
                 </asp:DropDownList>
-            </div>
+            </div> 
 
             <div class = "form-group">
                 <label>Crust: </label>
